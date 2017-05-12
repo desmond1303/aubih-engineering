@@ -45,27 +45,55 @@ header {
 
       li {
         display: inline-block;
-        position: relative;
         height: 100%;
         line-height: $header-child-height;
         font-size: 14px;
 
-        a {
+        > a {
           @extend .default-link;
           display: block;
           position: relative;
           height: 100%;
           margin: 0;
-          padding: 0 8.2px;
+          padding: 0 7.9px;
           text-transform: uppercase;
 
           + div {
+            position: absolute;
             display: none;
+            left: 0;
             width: 100%;
-            background-color: tomato;
+            background-color: $background-color;
+            box-sizing: border-box;
+            padding: 5px 25px;
+            padding-bottom: 25px;
+            border: 1px solid $light-grey;
 
             &:hover {
               display: block;
+            }
+
+            h5 {
+              display: block;
+              width: 100%;
+              font-size: 17px;
+              color: $aubih-blue;
+              margin-bottom: 10px;
+              padding-bottom: 10px;
+              border-bottom: 1px solid $aubih-blue;
+            }
+
+            a {
+              @extend .default-link;
+              color: $medium-grey;
+              display: block;
+              width: 100%;
+              padding: 7px 0;
+              line-height: normal;
+
+              &:hover {
+                color: $aubih-blue;
+              }
             }
           }
 
