@@ -1,0 +1,92 @@
+$header-child-height: 50px;
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: $background-color;
+
+  .header-child {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .top {
+    @extend .header-child;
+    background-color: $aubih-blue;
+    color: $light-font-color;
+
+    * {
+      color: $light-font-color;
+    }
+
+    .logo {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 70px;
+      height: 70px;
+      padding: 0;
+    }
+  }
+
+  .bottom {
+    @extend .header-child;
+    background-color: $transparent-color;
+
+    ul {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 0;
+
+      li {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        line-height: $header-child-height;
+        font-size: 14px;
+
+        a {
+          @extend .default-link;
+          display: block;
+          position: relative;
+          height: 100%;
+          margin: 0;
+          padding: 0 8.2px;
+          text-transform: uppercase;
+
+          + div {
+            display: none;
+            width: 100%;
+            background-color: tomato;
+
+            &:hover {
+              display: block;
+            }
+          }
+
+          &:hover {
+            color: $light-font-color;
+            background-color: $aubih-blue;
+
+            + div {
+              display: block;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  .header-item-container {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 70px;
+    height: $header-child-height;
+  }
+}
