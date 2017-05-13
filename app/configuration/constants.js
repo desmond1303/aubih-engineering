@@ -113,6 +113,9 @@ export default {
             {
               title: 'About',
               link: 'engineering.index',
+            }, {
+              title: 'Tuition & Fees',
+              link: 'engineering.tuition',
             },
           ],
         },

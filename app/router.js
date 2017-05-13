@@ -10,7 +10,9 @@ Router.map(function() {
   this.route('alumni', function() {
     this.route('list');
   });
-  this.route('engineering', function() {});
+  this.route('engineering', function() {
+    this.route('tuition');
+  });
 });
 
 export default Router;
