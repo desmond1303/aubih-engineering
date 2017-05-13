@@ -2,18 +2,58 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3">
-
+        <div class="motto">
+          <img src="/assets/images/logo.png" alt="AUBiH Logo">
+          <p>POWER OF KNOWLEDGE<br>AND INNOVATIONS</p>
+        </div>
+        <p>
+          {{fa-icon 'map-marker'}}Trg solidarnosti 10, 71000 Sarajevo
+          <br><br>
+          {{fa-icon 'phone'}}(387) 33 849 700
+          <br><br>
+          {{fa-icon 'envelope-o'}}info@aubih.edu
+        </p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        Useful Links
+        <h5>Useful Links</h5>
+        <ul>
+          {{#each usefulLinks as |link|}}
+            <li>
+              <a href="{{link.link}}">{{fa-icon 'angle-double-right'}}{{link.title}}</a>
+            </li>
+          {{/each}}
+        </ul>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        Latest News
+        <h5>Latest News</h5>
+        <ul>
+          {{#each latestNews as |newsItem|}}
+            <li class="news-item">
+              <a href="{{newsItem.link}}">
+                <div class="image">{{fa-icon 'photo'}}</div>
+                {{newsItem.title}}
+                <br>
+                <span>{{fa-icon 'calendar'}}{{newsItem.timestamp}}</span>
+              </a>
+            </li>
+          {{/each}}
+        </ul>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        Newsletter
+        <h5>Newsletter</h5>
+        <p>Keep up with latest events and announcements from AUBiH.<br>Enter your e-mail and subscribe to our newsletter.</p>
+        <br>
+        {{input type="text" placeholder="Enter your e-mail" class="form-control"}}
+        <br>
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="copyright">
+          <p class="copy">{{fa-icon 'copyright'}}Copyrights 2017, American University in Bosnia and Herzegovina</p>
+        </div>
       </div>
     </div>
   </div>
-  footer
 </footer>
