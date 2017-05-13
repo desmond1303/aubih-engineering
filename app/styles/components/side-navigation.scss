@@ -12,23 +12,16 @@ $nested-list-indent: 15px;
     width: 100%;
     border-bottom: 1px solid $line-color;
     padding: 7px 0;
+
+    &.active {
+      color: $accent-color;
+    }
   }
 }
 
 aside {
   a {
-    @extend .default-link;
-
-    &:active,
-    &:focus,
-    &:visited {
-      @extend .default-link:active;
-    }
-
-    &:hover,
-    &.active {
-      color: $accent-color;
-    }
+    @include default-link($dark-font-color);
   }
 
   > ul {

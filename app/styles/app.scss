@@ -10,32 +10,33 @@ $medium-grey: #666;
 $light-grey: #eee;
 $line-color: #e1e1e1;
 
-.default-link {
-  color: $dark-font-color;
+@mixin default-link($color) {
+  color: $color;
   text-decoration: none;
   cursor: pointer;
 
   &:active,
   &:focus,
   &:visited {
-    @extend .default-link;
+    color: $color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: $accent-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    > .fa {
+      color: $accent-color;
+    }
   }
 
   &.icon-only-link {
     > .fa {
       font-size: 14px;
     }
-  }
-
-}
-
-.default-link:hover {
-  color: $accent-color;
-  text-decoration: none;
-  cursor: pointer;
-
-  > .fa {
-    color: $accent-color;
   }
 }
 

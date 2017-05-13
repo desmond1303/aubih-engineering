@@ -94,8 +94,7 @@ footer {
       }
 
       a {
-        @extend .default-link;
-        color: inherit;
+        @include default-link($light-font-color);
         display: block;
         margin: 0;
         padding: 10px 0;
