@@ -1,5 +1,7 @@
 $header-child-height: 50px;
 
+// TODO: IMPLEMENT HEADER AS SIDEBAR FOR SMALL SCREENS (LESS THAN 991PX WIDE)
+
 header.page-header-component {
   position: fixed;
   z-index: 100;
@@ -85,8 +87,21 @@ header.page-header-component {
           position: relative;
           height: 100%;
           margin: 0;
-          padding: 0 7.9px;
           text-transform: uppercase;
+
+          @media (max-width: 991px) {
+            background-color: tomato;
+          }
+
+          @media (min-width: 992px) {
+            font-size: 12px;
+            padding: 0 5px;
+          }
+
+          @media (min-width: 1200px) {
+            font-size: 14px;
+            padding: 0 7.9px;
+          }
 
           + div {
             position: absolute;

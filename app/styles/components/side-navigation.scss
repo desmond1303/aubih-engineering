@@ -20,6 +20,8 @@ $nested-list-indent: 15px;
 }
 
 aside {
+  margin-bottom: 60px;
+
   a {
     @include default-link($dark-font-color);
   }
