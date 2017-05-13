@@ -3,20 +3,20 @@ export default {
     navigationItems: [
       {
         title: 'About',
-        link: '#',
+        link: 'index',
         subMenu: [
           {
             title: 'About',
             links: [
               {
                 title: 'Overview',
-                link: '#',
+                link: 'index',
               }, {
                 title: 'Mission & Vision',
-                link: '#',
+                link: 'index',
               }, {
                 title: 'The Values of Study',
-                link: '#',
+                link: 'index',
               },
             ],
           }, {
@@ -24,7 +24,7 @@ export default {
             links: [
               {
                 title: 'Rector\'s message',
-                link: '#',
+                link: 'index',
               },
             ],
           }, {
@@ -32,7 +32,7 @@ export default {
             links: [
               {
                 title: 'Rector\'s message',
-                link: '#',
+                link: 'index',
               },
             ],
           }, {
@@ -40,62 +40,62 @@ export default {
             links: [
               {
                 title: 'Rector\'s message',
-                link: '#',
+                link: 'index',
               },
             ],
           },
         ],
       }, {
         title: 'Online',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Academics',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Degree',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Students',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Admission',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Global',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Career',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Research',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Academy',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Innovations',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Alumni',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'News',
-        link: '#',
+        link: 'index',
         subMenu: [],
       }, {
         title: 'Contact',
-        link: '#',
+        link: 'index',
         subMenu: [],
       },
     ],
@@ -133,6 +133,50 @@ export default {
           ],
         },
       ],
+
+      list: [
+        {
+          name: 'Name Surname',
+          company: 'Company 1',
+          profession: 'Profession',
+          photo: '/assets/images/alumni/placeholder.png',
+        }, {
+          name: 'Name Surname',
+          company: 'Company 2',
+          profession: 'Profession',
+          photo: '/assets/images/alumni/placeholder.png',
+        }, {
+          name: 'Name Surname',
+          company: 'Company 3',
+          profession: 'Profession',
+          photo: '/assets/images/alumni/placeholder.png',
+        }, {
+          name: 'Name Surname',
+          company: 'Company 4',
+          profession: 'Profession',
+          photo: '/assets/images/alumni/placeholder.png',
+        }, {
+          name: 'Name Surname',
+          company: 'Company 5',
+          profession: 'Profession',
+          photo: '/assets/images/alumni/placeholder.png',
+        }, {
+          name: 'Name Surname',
+          company: 'Company 6',
+          profession: 'Profession',
+          photo: '/assets/images/alumni/placeholder.png',
+        }, {
+          name: 'Name Surname',
+          company: 'Company 7',
+          profession: 'Profession',
+          photo: '/assets/images/alumni/placeholder.png',
+        }, {
+          name: 'Name Surname',
+          company: 'Company 8',
+          profession: 'Profession',
+          photo: '/assets/images/alumni/placeholder.png',
+        },
+      ],
     },
   },
 
@@ -140,19 +184,19 @@ export default {
     usefulLinks: [
       {
         title: 'About AUBiH',
-        link: '#',
+        link: 'index',
       }, {
         title: 'AUBiH Online',
-        link: '#',
+        link: 'index',
       }, {
         title: 'AUBiH TV',
-        link: '#',
+        link: 'index',
       }, {
         title: 'AUBiH Online Store',
-        link: '#',
+        link: 'index',
       }, {
         title: 'Contact Us',
-        link: '#',
+        link: 'index',
       },
     ],
 
@@ -161,17 +205,17 @@ export default {
         title: 'BIT Alliance and AUBiH Cooperation',
         timestamp: '17th April, 2017',
         img: '',
-        link: '#',
+        link: 'index',
       }, {
         title: 'Agreement on cooperation',
         timestamp: '12th April, 2017',
         img: '',
-        link: '#',
+        link: 'index',
       }, {
         title: 'Our reform of Education',
         timestamp: '7th April, 2017',
         img: '',
-        link: '#',
+        link: 'index',
       },
     ],
   },

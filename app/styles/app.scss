@@ -47,11 +47,7 @@ $line-color: #e1e1e1;
 html,
 body {
   height: 100%;
-  background-color: $light-grey;
-}
-
-body {
-  background-color: #eee; // TODO: REMOVE
+  background-color: $background-color;
 }
 
 .ember-application {
@@ -75,4 +71,5 @@ body {
 @import 'components/page-header';
 @import 'main';
 @import 'components/side-navigation';
+@import 'alumni/list';
 @import 'components/page-footer';

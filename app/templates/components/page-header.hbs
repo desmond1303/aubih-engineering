@@ -27,9 +27,7 @@
             <ul>
               {{#each navigationItems as |navigationItem|}}
                 <li>
-                  <a href="{{navigationItem.link}}">
-                    {{navigationItem.title}}
-                  </a>
+                  {{#link-to navigationItem.link}}{{navigationItem.title}}{{/link-to}}
                   {{#if navigationItem.subMenu}}
                     <div>
                       <div class="row">
@@ -37,7 +35,7 @@
                           <div class="{{get-col navigationItem.subMenu}}">
                             <h5>{{subItem.title}}</h5>
                             {{#each subItem.links as |linkItem|}}
-                              <a href="{{linkItem.link}}">{{linkItem.title}}</a>
+                              {{#link-to linkItem.link}}{{linkItem.title}}{{/link-to}}
                             {{/each}}
                           </div>
                         {{/each}}

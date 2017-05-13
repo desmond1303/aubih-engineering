@@ -1,1 +1,13 @@
-{{outlet}}
+<div class="row alumni">
+  {{#each alumni as |alumnus|}}
+    <div class="col-xs-6 col-sm-4">
+      <div class="alumnus">
+        <div class="photo" style={{background-image alumnus.photo}}>
+        </div>
+        <h3>{{alumnus.name}}</h3>
+        <p>{{alumnus.profession}}</p>
+        <p>{{alumnus.company}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>

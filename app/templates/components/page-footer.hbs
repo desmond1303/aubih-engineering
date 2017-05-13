@@ -19,7 +19,7 @@
         <ul>
           {{#each usefulLinks as |link|}}
             <li>
-              <a href="{{link.link}}">{{fa-icon 'angle-double-right'}}{{link.title}}</a>
+              {{#link-to link.link}}{{fa-icon 'angle-double-right'}}{{link.title}}{{/link-to}}
             </li>
           {{/each}}
         </ul>
@@ -29,12 +29,12 @@
         <ul>
           {{#each latestNews as |newsItem|}}
             <li class="news-item">
-              <a href="{{newsItem.link}}">
+              {{#link-to newsItem.link}}
                 <div class="image">{{fa-icon 'photo'}}</div>
                 {{newsItem.title}}
                 <br>
                 <span>{{fa-icon 'calendar'}}{{newsItem.timestamp}}</span>
-              </a>
+              {{/link-to}}
             </li>
           {{/each}}
         </ul>

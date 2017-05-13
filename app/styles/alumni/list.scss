@@ -1,0 +1,20 @@
+.alumni {
+
+  .alumnus {
+    text-align: center;
+    margin: 0 0 40px;
+
+    .photo {
+      display: block;
+      position: relative;
+      margin-left: 10%;
+      width: 80%;
+      height: 0px;
+      overflow: hidden;
+      padding: 0 0 80%;
+      border-radius: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
