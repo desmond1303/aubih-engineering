@@ -1,1 +1,20 @@
-{{outlet}}
+<header class="alumni-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Alumni</h3>
+        <h1>About</h1>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-3">
+      {{side-navigation items=sideNavigationItems}}
+    </div>
+    <div class="col-xs-12 col-sm-9">
+      {{outlet}}
+    </div>
+  </div>
+</div>

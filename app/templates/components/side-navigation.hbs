@@ -2,12 +2,12 @@
   <ul>
     {{#each items as |item|}}
       <li>
-        <a href="{{item.link}}">{{item.title}}</a>
+        {{#link-to item.link}}{{item.title}}{{/link-to}}
         {{#if item.subMenu}}
           <ul>
             {{#each item.subMenu as |subItem|}}
               <li>
-                <a href="{{subItem.link}}">{{subItem.title}}</a>
+                {{#link-to subItem.link}}{{subItem.title}}{{/link-to}}
               </li>
             {{/each}}
           </ul>

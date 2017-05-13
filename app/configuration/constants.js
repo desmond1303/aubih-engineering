@@ -102,44 +102,37 @@ export default {
   },
 
   main: {
-    index: {
+    engineering: {
       sideNavigationItems: [
         {
-          title: 'Main Item 1',
-          link: '#',
+          title: 'Engineering',
+          link: 'engineering',
           subMenu: [
             {
-              title: 'Sub Item 1',
-              link: '#',
-            }, {
-              title: 'Sub Item 2',
-              link: '#',
-            }, {
-              title: 'Sub Item 3',
-              link: '#',
+              title: 'About',
+              link: 'engineering.index',
             },
-          ]
-        }, {
-          title: 'Main Item 2',
-          link: '#',
-          subMenu: [
-            {
-              title: 'Sub Item 1',
-              link: '#',
-            }, {
-              title: 'Sub Item 2',
-              link: '#',
-            }, {
-              title: 'Sub Item 3',
-              link: '#',
-            },
-          ]
+          ],
         },
       ],
     },
 
     alumni: {
-      sideNavigationItems: [],
+      sideNavigationItems: [
+        {
+          title: 'Alumni',
+          link: 'alumni',
+          subMenu: [
+            {
+              title: 'About',
+              link: 'alumni.index',
+            }, {
+              title: 'List',
+              link: 'alumni.list',
+            },
+          ],
+        },
+      ],
     },
   },
 

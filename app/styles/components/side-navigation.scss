@@ -18,6 +18,17 @@ $nested-list-indent: 15px;
 aside {
   a {
     @extend .default-link;
+
+    &:active,
+    &:focus,
+    &:visited {
+      @extend .default-link:active;
+    }
+
+    &:hover,
+    &.active {
+      color: $accent-color;
+    }
   }
 
   > ul {
