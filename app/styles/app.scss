@@ -8,6 +8,7 @@ $aubih-blue: #143960;
 $accent-color: #de2d28;
 $medium-grey: #666;
 $light-grey: #eee;
+$line-color: #e1e1e1;
 
 .default-link {
   color: $dark-font-color;
@@ -71,6 +72,7 @@ body {
   margin-top: auto;
 }
 
-@import 'components/page-header.scss';
+@import 'components/page-header';
 @import 'main';
-@import 'components/page-footer.scss';
+@import 'components/side-navigation';
+@import 'components/page-footer';

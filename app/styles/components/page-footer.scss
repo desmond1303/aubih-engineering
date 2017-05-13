@@ -3,6 +3,7 @@ $news-image-width: 96px;
 
 footer {
   position: relative;
+  z-index: 99;
   width: 100%;
   background-color: $aubih-blue;
   color: $light-font-color;

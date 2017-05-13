@@ -102,7 +102,45 @@ export default {
   },
 
   main: {
+    index: {
+      sideNavigationItems: [
+        {
+          title: 'Main Item 1',
+          link: '#',
+          subMenu: [
+            {
+              title: 'Sub Item 1',
+              link: '#',
+            }, {
+              title: 'Sub Item 2',
+              link: '#',
+            }, {
+              title: 'Sub Item 3',
+              link: '#',
+            },
+          ]
+        }, {
+          title: 'Main Item 2',
+          link: '#',
+          subMenu: [
+            {
+              title: 'Sub Item 1',
+              link: '#',
+            }, {
+              title: 'Sub Item 2',
+              link: '#',
+            }, {
+              title: 'Sub Item 3',
+              link: '#',
+            },
+          ]
+        },
+      ],
+    },
 
+    alumni: {
+      sideNavigationItems: [],
+    },
   },
 
   footer: {
