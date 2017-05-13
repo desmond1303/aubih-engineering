@@ -6,11 +6,11 @@ const {
 } = Ember;
 
 export default Ember.Component.extend({
-  emailAddress: 'info@aubih.edu',
+  navigationItems: Constants.header.navigationItems,
+  emailAddress: Constants.header.emailAddress,
 
   mailTo: computed('emailAddress', function () {
     return 'mailto:' + this.get('emailAddress');
   }),
 
-  navigationItems: Constants.header.navigationItems,
 });

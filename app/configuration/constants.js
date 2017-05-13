@@ -1,5 +1,7 @@
 export default {
   header: {
+    emailAddress: 'info@aubih.edu',
+
     navigationItems: [
       {
         title: 'About',
