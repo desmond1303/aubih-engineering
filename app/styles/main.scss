@@ -14,7 +14,7 @@ main {
     height: auto;
     z-index: 0;
 
-    h2 {
+    h3 {
       padding: 0;
       margin: 150px 0 10px;
       color: $light-font-color;
@@ -40,6 +40,10 @@ main {
 
     &.engineering-banner {
       background-image: url('/assets/images/engineering-banner.jpg');
+    }
+
+    &.alumni-banner {
+      background-image: url('/assets/images/alumni-banner.jpg');
     }
   }
 }
