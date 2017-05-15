@@ -4,6 +4,10 @@
     text-align: center;
     margin: 0 0 40px;
 
+      p {
+        text-align: inherit;
+      }
+
     .photo {
       display: block;
       position: relative;
