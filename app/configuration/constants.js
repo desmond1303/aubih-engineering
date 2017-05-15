@@ -1,4 +1,17 @@
 export default {
+  routeTitles: {
+    alumni: {
+      parent: 'Alumni',
+      index: 'About',
+      list: 'List',
+    },
+    engineering: {
+      parent: 'Engineering College',
+      index: 'About',
+      tuition: 'Tuition & Fees',
+    },
+  },
+
   header: {
     emailAddress: 'info@aubih.edu',
 

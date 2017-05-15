@@ -1,9 +1,4 @@
-import Ember from 'ember';
+import Base from './../base';
 
-export default Ember.Route.extend({
-
-  beforeModel: function () {
-    window.scrollTo(0, 0);
-  },
-
+export default Base.extend({
 });
