@@ -38,7 +38,15 @@ main {
     }
 
     &.index-banner {
+      height: 350px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #0c1e50;
       background-image: url('/assets/images/index-banner.jpg');
+
+      &:after {
+        display: none;
+      }
     }
 
     &.engineering-banner {
@@ -47,6 +55,23 @@ main {
 
     &.alumni-banner {
       background-image: url('/assets/images/alumni-banner.jpg');
+    }
+  }
+
+  .index-link {
+    @include default-link($light-font-color);
+    display: block;
+    position: relative;
+    text-align: center;
+    background-color: $aubih-blue;
+    font-size: 25px;
+    padding: 40px 0;
+
+
+    > .fa {
+      color: inherit;
+      font-size: 40px;
+      margin: 0 0 10px;
     }
   }
 
