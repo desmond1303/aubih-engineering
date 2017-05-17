@@ -176,6 +176,16 @@ export default {
 
       list: [
         {
+          name: 'Iljazović Jasmila',
+          company: 'American University in Bosnia and Herzegovina',
+          profession: 'Professor',
+          photo: '/assets/images/alumni/iljazovic-jasmila.jpg',
+        }, {
+          name: 'Hodžić Seid',
+          company: 'Alchemy Capital',
+          profession: 'Managing Director',
+          photo: '/assets/images/alumni/hodzic-seid.jpg',
+        }, {
           name: 'Agovic Damir',
           company: 'Google Online Media Associate',
           profession: '',
@@ -244,7 +254,7 @@ export default {
           name: 'Mujezinovic Alma',
           company: 'Forex',
           profession: 'Senior Account Manager',
-          photo: '/assets/images/alumni/placeholder.png',
+          photo: '/assets/images/alumni/placeholder-f.png',
         },
       ],
     },
