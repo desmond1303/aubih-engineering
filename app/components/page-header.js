@@ -18,7 +18,7 @@ export default Ember.Component.extend({
   sidebarToggleIcon: 'bars',
 
   actions: {
-    toggleSidebr: function () {
+    toggleSidebar: function () {
       let $sidebar = $('.bottom');
       let $button = $('.menu-button');
       if ($sidebar.hasClass('visible')) {

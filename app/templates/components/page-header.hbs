@@ -1,6 +1,6 @@
 <header class="page-header-component">
   <div class="top">
-    <div class="menu-button visible-xs-block visible-sm-block" {{action 'toggleSidebr'}}>
+    <div class="menu-button visible-xs-block visible-sm-block" {{action 'toggleSidebar'}}>
       {{fa-icon sidebarToggleIcon}}
     </div>
     <div class="container">
@@ -27,7 +27,11 @@
             <ul>
               {{#each navigationItems as |navigationItem|}}
                 <li>
-                  {{#link-to navigationItem.link}}{{navigationItem.title}}{{/link-to}}
+                  {{#if (is-local-link router navigationItem.link)}}
+                    {{#link-to navigationItem.link}}{{navigationItem.title}}{{/link-to}}
+                  {{else}}
+                    <a href="{{navigationItem.link}}">{{navigationItem.title}}</a>
+                  {{/if}}
                   {{#if navigationItem.subMenu}}
                     <div>
                       <div class="row">
@@ -35,7 +39,11 @@
                           <div class="{{get-col navigationItem.subMenu}}">
                             <h5>{{subItem.title}}</h5>
                             {{#each subItem.links as |linkItem|}}
-                              {{#link-to linkItem.link}}{{linkItem.title}}{{/link-to}}
+                              {{#if (is-local-link router linkItem.link)}}
+                                {{#link-to linkItem.link}}{{linkItem.title}}{{/link-to}}
+                              {{else}}
+                                <a href="{{linkItem.link}}">{{linkItem.title}}</a>
+                              {{/if}}
                             {{/each}}
                           </div>
                         {{/each}}

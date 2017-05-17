@@ -10,11 +10,11 @@ export default Ember.Route.extend({
   afterModel: function () {
     let route = this.get('routeName');
     let routeName = this._resolveRouteName(route);
-    console.log(route, this.controllerFor(route), routeName);
+    this.controllerFor('application').set('_router', this.get('router.router.recognizer.names'));
     this.controllerFor(route).set('routeName', routeName);
   },
 
-  renderTemplate: function (controller, model) {
+  renderTemplate: function (controller) {
     this.render();
 
     this.render('page-title', {
