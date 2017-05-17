@@ -37,6 +37,10 @@ main {
       background-color: transparentize($aubih-blue, 0.1);
     }
 
+    &.index-banner {
+      background-image: url('/assets/images/index-banner.jpg');
+    }
+
     &.engineering-banner {
       background-image: url('/assets/images/engineering-banner.jpg');
     }
