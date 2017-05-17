@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import Constants from './../configuration/constants';
+import RouteTitles from './../configuration/route-titles';
 
 export default Ember.Route.extend({
 
@@ -25,7 +25,7 @@ export default Ember.Route.extend({
 
   _resolveRouteName: function (route) {
     let parts = route.split('.');
-    let routeName = Constants.routeTitles;
+    let routeName = RouteTitles;
     parts.forEach(part => {
       routeName = routeName[part];
     });
