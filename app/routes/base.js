@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import Constants from './../configuration/constants';
+import RouteTitles from './../configuration/route-titles';
 
 export default Ember.Route.extend({
 
@@ -10,11 +10,11 @@ export default Ember.Route.extend({
   afterModel: function () {
     let route = this.get('routeName');
     let routeName = this._resolveRouteName(route);
-    console.log(route, this.controllerFor(route), routeName);
+    this.controllerFor('application').set('_router', this.get('router.router.recognizer.names'));
     this.controllerFor(route).set('routeName', routeName);
   },
 
-  renderTemplate: function (controller, model) {
+  renderTemplate: function (controller) {
     this.render();
 
     this.render('page-title', {
@@ -25,7 +25,7 @@ export default Ember.Route.extend({
 
   _resolveRouteName: function (route) {
     let parts = route.split('.');
-    let routeName = Constants.routeTitles;
+    let routeName = RouteTitles;
     parts.forEach(part => {
       routeName = routeName[part];
     });

@@ -88,6 +88,8 @@ $header-child-height: 50px;
           width: 100%;
           height: 43px;
           line-height: 43px;
+          border-bottom: 1px solid $line-color;
+          text-indent: 10px;
 
           > div {
             display: none;

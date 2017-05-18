@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import Constants from './../../configuration/constants';
+import AlumniList from './../../configuration/alumni/list';
 
 const {
   computed,
@@ -8,7 +8,7 @@ const {
 export default Ember.Controller.extend({
 
   alumni: computed(function () {
-    return Constants.main.alumni.list.sort(this.compareNames);
+    return AlumniList.sort(this.compareNames);
   }),
 
   compareNames: function (a, b) {

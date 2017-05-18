@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import Constants from './../configuration/constants';
+import SideNavigationItems from './../configuration/side-navigation/alumni';
 
 export default Ember.Controller.extend({
-  sideNavigationItems: Constants.main.alumni.sideNavigationItems,
+  sideNavigationItems: SideNavigationItems,
 });

@@ -1,10 +1,10 @@
 import Ember from 'ember';
-import Constants from './../configuration/constants';
+import MiscellaneousData from './../configuration/footer/misc';
 
 export default Ember.Component.extend({
   classNames: ['footer-view'],
 
-  usefulLinks: Constants.footer.usefulLinks,
-  latestNews: Constants.footer.latestNews,
+  usefulLinks: MiscellaneousData.usefulLinks,
+  latestNews: MiscellaneousData.latestNews,
 
 });

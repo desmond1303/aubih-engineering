@@ -1,15 +1,16 @@
 import Ember from 'ember';
 import $ from 'jquery';
-import Constants from './../configuration/constants';
+import MainNavigation from './../configuration/main-navigation';
+import MiscellaneousData from './../configuration/header/misc';
 
 const {
   computed,
 } = Ember;
 
 export default Ember.Component.extend({
-  socialLinks: Constants.header.socialLinks,
-  navigationItems: Constants.header.navigationItems,
-  emailAddress: Constants.header.emailAddress,
+  navigationItems: MainNavigation,
+  socialLinks: MiscellaneousData.socialLinks,
+  emailAddress: MiscellaneousData.emailAddress,
 
   mailTo: computed('emailAddress', function () {
     return 'mailto:' + this.get('emailAddress');
@@ -18,7 +19,7 @@ export default Ember.Component.extend({
   sidebarToggleIcon: 'bars',
 
   actions: {
-    toggleSidebr: function () {
+    toggleSidebar: function () {
       let $sidebar = $('.bottom');
       let $button = $('.menu-button');
       if ($sidebar.hasClass('visible')) {
