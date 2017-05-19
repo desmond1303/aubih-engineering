@@ -1,0 +1,78 @@
+@mixin listContainer() {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@mixin listItem() {
+  display: inline-block;
+  font-size: 14px;
+
+  &:hover > ul {
+    display: block;
+  }
+
+  &:first-of-type {
+    a {
+      padding-left: 0;
+    }
+  }
+
+  &:last-of-type {
+    a {
+      padding-right: 0;
+    }
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    padding: 15px 15px;
+
+    &.active {
+      color: $accent-color;
+    }
+  }
+}
+
+.sub-navigation {
+  position: relative;
+  z-index: 103;
+  background-color: $light-grey;
+  margin-top: -50px;
+  margin-bottom: 60px;
+  font-size: 0;
+
+  .item-container {
+    display: inline-block;
+  }
+
+  a {
+    @include default-link($dark-font-color);
+  }
+
+  ul.top-level {
+    @include listContainer();
+
+    li {
+      @include listItem();
+
+      ul {
+        @include listContainer();
+        display: none;
+        position: absolute;
+        width: auto;
+        background-color: tomato;
+
+        > li {
+          a {
+            padding: 15px 15px !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<div class="sub-navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="top-level">
+          {{#each items as |item|}}
+            {{component 'sub-navigation/item' item=item}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

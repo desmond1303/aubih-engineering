@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import SideNavigationItems from './../configuration/side-navigation/engineering';
+import subNavigationItems from './../configuration/sub-navigation/engineering';
 
 export default Ember.Controller.extend({
-  sideNavigationItems: SideNavigationItems,
+  subNavigationItems: subNavigationItems,
 });

@@ -1,0 +1,10 @@
+<li>
+  {{#link-to item.link}}{{item.title}}{{/link-to}}
+  {{#if item.subMenu}}
+    <ul>
+      {{#each item.subMenu as |subItem|}}
+      {{component 'sub-navigation/item' item=subItem}}
+      {{/each}}
+    </ul>
+  {{/if}}
+</li>
