@@ -1,5 +1,5 @@
-<li>
-  {{#link-to item.link}}{{item.title}}{{/link-to}}
+<li class={{topLevelClass}}>
+  {{#link-to item.link}}{{item.title}}{{#if item.subMenu}}{{fa-icon 'angle-right'}}{{/if}}{{/link-to}}
   {{#if item.subMenu}}
     <ul>
       {{#each item.subMenu as |subItem|}}

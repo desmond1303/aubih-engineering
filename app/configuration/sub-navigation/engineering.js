@@ -21,6 +21,24 @@ export default [
             ],
           },
         ],
+      }, {
+        title: 'Tets',
+        link: 'index',
+        subMenu: [
+          {
+            title: 'Degree Programs',
+            link: 'index',
+            subMenu: [
+              {
+                title: 'Tets',
+                link: 'index',
+              }, {
+                title: 'Tets',
+                link: 'index',
+              },
+            ],
+          },
+        ],
       },
     ],
   }, {

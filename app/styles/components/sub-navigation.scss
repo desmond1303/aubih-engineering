@@ -15,18 +15,6 @@
     display: block;
   }
 
-  &:first-of-type {
-    a {
-      padding-left: 0;
-    }
-  }
-
-  &:last-of-type {
-    a {
-      padding-right: 0;
-    }
-  }
-
   a {
     display: block;
     width: 100%;
@@ -45,6 +33,7 @@
   margin-top: -50px;
   margin-bottom: 60px;
   font-size: 0;
+  text-align: center;
 
   .item-container {
     display: inline-block;
@@ -52,6 +41,7 @@
 
   a {
     @include default-link($dark-font-color);
+    white-space: nowrap;
   }
 
   ul.top-level {
@@ -59,15 +49,42 @@
 
     li {
       @include listItem();
+      position: relative;
+
+      &.top-level {
+        > a {
+          > .fa {
+            display: none;
+          }
+        }
+      }
+
+      .fa {
+        margin: 0 0 0 15px;
+      }
+
+      &:not(.top-level) {
+        ul {
+          top: 0;
+          left: 100%;
+        }
+      }
 
       ul {
         @include listContainer();
         display: none;
         position: absolute;
         width: auto;
-        background-color: tomato;
+        background-color: $light-grey;
+        box-shadow: inset 0 0 0 1px $line-color;
+
+        .item-container {
+          display: block;
+        }
 
         > li {
+          color: blue;
+
           a {
             padding: 15px 15px !important;
           }
