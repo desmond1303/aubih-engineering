@@ -60,7 +60,7 @@ export default [
     profession: 'IT Key User',
     photo: '/assets/images/alumni/placeholder.png',
   }, {
-    name: 'Ćatić Dženad',
+    name: 'Catić Dženad',
     company: 'Alternativa Ltd.',
     profession: 'Web Developer',
     photo: '/assets/images/alumni/catic-dzenad.jpg',

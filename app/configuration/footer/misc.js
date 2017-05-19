@@ -22,17 +22,17 @@ export default {
     {
       title: 'BIT Alliance and AUBiH Cooperation',
       timestamp: '17th April, 2017',
-      img: '',
+      img: '/assets/images/bit-alliance.jpg',
       link: 'index',
     }, {
       title: 'Agreement on cooperation',
       timestamp: '12th April, 2017',
-      img: '',
+      img: 'agreement.jpg',
       link: 'index',
     }, {
       title: 'Our reform of Education',
       timestamp: '7th April, 2017',
-      img: '',
+      img: 'reform.jpg',
       link: 'index',
     },
   ],
