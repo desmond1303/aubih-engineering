@@ -7,15 +7,23 @@ export default [
     link: 'index',
     subMenu: [
       {
-        title: 'Tets',
+        title: 'Undergraduate',
         link: 'index',
         subMenu: [
           {
-            title: 'Degree Programs',
+            title: 'Software Engineering',
             link: 'index',
             subMenu: [
               {
-                title: 'Tets',
+                title: 'Overview',
+                link: 'index',
+              },
+              {
+                title: 'Curriculum',
+                link: 'index',
+              },
+              {
+                title: 'Course Descriptions',
                 link: 'index',
               },
             ],
