@@ -8,5 +8,12 @@ export default {
     parent: 'Engineering College',
     index: 'About',
     tuition: 'Tuition & Fees',
+    undergradurate: {
+      software: {
+        overview: 'Overview',
+        curriculum: 'Curriculum',
+        courses: 'Course Description',
+      },
+    },
   },
 };

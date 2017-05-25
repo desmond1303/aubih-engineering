@@ -12,6 +12,14 @@ Router.map(function() {
   });
   this.route('engineering', function() {
     this.route('tuition');
+
+    this.route('undergradurate', function() {
+      this.route('software', function() {
+        this.route('overview');
+        this.route('curriculum');
+        this.route('courses');
+      });
+    });
   });
 });
 
