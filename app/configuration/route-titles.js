@@ -8,7 +8,7 @@ export default {
     parent: 'Engineering College',
     index: 'About',
     tuition: 'Tuition & Fees',
-    undergradurate: {
+    undergraduate: {
       software: {
         overview: 'Overview',
         curriculum: 'Curriculum',

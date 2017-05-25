@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import RouteTitles from './../configuration/route-titles';
+import RouteTitles from 'engineering/configuration/route-titles';
 
 export default Ember.Route.extend({
 
@@ -15,12 +15,12 @@ export default Ember.Route.extend({
   },
 
   renderTemplate: function (controller) {
-    this.render();
-
     this.render('page-title', {
       outlet: 'pageTitle',
       controller: controller,
     });
+
+    this.render();
   },
 
   _resolveRouteName: function (route) {

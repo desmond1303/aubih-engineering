@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import AlumniList from './../../configuration/alumni/list';
+import AlumniList from 'engineering/configuration/alumni/list';
 
 const {
   computed,

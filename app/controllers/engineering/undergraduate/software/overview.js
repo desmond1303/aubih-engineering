@@ -7,7 +7,7 @@ const {
 export default Ember.Controller.extend({
 
   testRouteName: function () {
-    console.log(this.get('routeName'));
+    console.log('routeName', this.get('routeName'));
   }.observes('routeName'),
 
 });
