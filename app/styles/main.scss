@@ -4,6 +4,10 @@ main {
   padding-top: $header-child-height * 2;
   padding-bottom: 80px;
 
+  .non-relative {
+    position: inherit;
+  }
+
   header {
     display: block;
     position: relative;

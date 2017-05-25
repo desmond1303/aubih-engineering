@@ -22,7 +22,7 @@ export default [
           },
         ],
       }, {
-        title: 'Tets',
+        title: 'Programs',
         link: 'index',
         subMenu: [
           {
@@ -30,10 +30,10 @@ export default [
             link: 'index',
             subMenu: [
               {
-                title: 'Tets',
+                title: 'Test',
                 link: 'index',
               }, {
-                title: 'Tets',
+                title: 'Test',
                 link: 'index',
               },
             ],

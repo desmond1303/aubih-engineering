@@ -1,0 +1,14 @@
+$in-text-banner-height: 350px;
+
+.in-text-banner-view {
+  height: $in-text-banner-height;
+  margin: 50px 0;
+
+  .in-text-banner {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: $in-text-banner-height;
+    background-color: $light-grey;
+  }
+}
