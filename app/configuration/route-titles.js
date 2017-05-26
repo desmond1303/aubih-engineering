@@ -1,4 +1,7 @@
 export default {
+  index: {
+    title: 'Home',
+  },
   alumni: {
     title: 'Alumni',
     index: {

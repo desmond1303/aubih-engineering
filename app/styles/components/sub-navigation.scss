@@ -8,6 +8,7 @@
 }
 
 @mixin listItem() {
+  position: relative;
   display: inline-block;
   font-size: 14px;
 
@@ -19,9 +20,42 @@
     display: block;
     width: 100%;
     padding: 15px 15px;
+    text-align: left;
 
     &.active {
       color: $accent-color;
+    }
+  }
+
+  &.top-level {
+    > a {
+      > .fa {
+        display: none;
+      }
+    }
+  }
+
+  &:not(.top-level) {
+    ul {
+      top: 0;
+      left: 100%;
+    }
+  }
+
+  .fa {
+    margin: 0 0 0 15px;
+  }
+
+  &.has-children {
+    > a {
+      padding-right: 35px;
+
+      > .fa {
+        position: absolute;
+        right: 15px;
+        margin: 0;
+        top: calc(50% - 8px);
+      }
     }
   }
 }
@@ -49,26 +83,7 @@
 
     li {
       @include listItem();
-      position: relative;
-
-      &.top-level {
-        > a {
-          > .fa {
-            display: none;
-          }
-        }
-      }
-
-      .fa {
-        margin: 0 0 0 15px;
-      }
-
-      &:not(.top-level) {
-        ul {
-          top: 0;
-          left: 100%;
-        }
-      }
+      width: 100%;
 
       ul {
         @include listContainer();
@@ -80,14 +95,6 @@
 
         .item-container {
           display: block;
-        }
-
-        > li {
-          color: blue;
-
-          a {
-            padding: 15px 15px !important;
-          }
         }
       }
     }
