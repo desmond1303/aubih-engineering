@@ -1,18 +1,34 @@
 export default {
   alumni: {
-    parent: 'Alumni',
-    index: 'About',
-    list: 'List',
+    title: 'Alumni',
+    index: {
+      title: 'About',
+    },
+    list: {
+      title: 'List',
+    },
   },
   engineering: {
-    parent: 'Engineering College',
-    index: 'About',
-    tuition: 'Tuition & Fees',
+    title: 'Engineering College',
+    index: {
+      title: 'About',
+    },
+    tuition: {
+      title: 'Tuition & Fees',
+    },
     undergraduate: {
+      title: 'Undergraduate',
       software: {
-        overview: 'Overview',
-        curriculum: 'Curriculum',
-        courses: 'Course Description',
+        title: 'Software',
+        overview: {
+          title: 'Overview',
+        },
+        curriculum: {
+          title: 'Curriculum',
+        },
+        courses: {
+          title: 'Course Deccription',
+        },
       },
     },
   },

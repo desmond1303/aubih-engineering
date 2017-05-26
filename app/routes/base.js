@@ -3,34 +3,36 @@ import RouteTitles from 'engineering/configuration/route-titles';
 
 export default Ember.Route.extend({
 
+  _topParenTitle: null,
+
   beforeModel: function () {
     window.scrollTo(0, 0);
   },
 
   afterModel: function () {
-    let route = this.get('routeName');
-    let routeName = this._resolveRouteName(route);
     this.controllerFor('application').set('_router', this.get('router.router.recognizer.names'));
-    this.controllerFor(route).set('routeName', routeName);
+
+    let route = this.get('routeName');
+    this.controllerFor(route).set('routeTitle', this._resolveRouteTitle(route));
+    this.set('_topParenTitle', route.split('.')[0]);
   },
 
   renderTemplate: function (controller) {
-    this.render('page-title', {
-      outlet: 'pageTitle',
-      controller: controller,
+    this._super(...arguments);
+    this.render('components/route-title', {
+      outlet: 'routeTitle',
+      into: this.get('_topParenTitle'),
     });
-
-    this.render();
   },
 
-  _resolveRouteName: function (route) {
+  _resolveRouteTitle: function (route) {
     let parts = route.split('.');
-    let routeName = RouteTitles;
+    let routeTitle = RouteTitles;
     parts.forEach(part => {
-      routeName = routeName[part];
+      routeTitle = routeTitle[part];
     });
 
-    return routeName;
+    return routeTitle.title;
   },
 
 });
