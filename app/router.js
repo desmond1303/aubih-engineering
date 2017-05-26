@@ -14,11 +14,39 @@ Router.map(function () {
   this.route('engineering', function () {
     this.route('tuition');
 
-    this.route('undergraduate', function () {
-      this.route('software', function () {
-        this.route('overview');
-        this.route('curriculum');
-        this.route('courses');
+    this.route('degree', function () {
+      this.route('undergraduate', function () {
+        this.route('software', function () {
+          this.route('overview');
+          this.route('curriculum');
+          this.route('courses');
+          this.route('tuition');
+        });
+      });
+
+      this.route('masters', function () {
+        this.route('software', function () {
+          this.route('overview');
+          this.route('curriculum');
+          this.route('courses');
+          this.route('tuition');
+        });
+
+        this.route('system', function () {
+          this.route('overview');
+          this.route('curriculum');
+          this.route('courses');
+          this.route('tuition');
+        });
+      });
+
+      this.route('doctoral', function () {
+        this.route('computer', function () {
+          this.route('overview');
+          this.route('curriculum');
+          this.route('courses');
+          this.route('tuition');
+        });
       });
     });
   });

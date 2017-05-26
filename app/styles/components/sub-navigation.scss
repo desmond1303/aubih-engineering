@@ -23,7 +23,7 @@
     text-align: left;
 
     &.active {
-      color: $accent-color;
+      box-shadow: inset 0 -1px 0 $accent-color;
     }
   }
 
@@ -31,6 +31,12 @@
     > a {
       > .fa {
         display: none;
+      }
+    }
+
+    &.has-children {
+      > a {
+        padding-right: 15px;
       }
     }
   }
