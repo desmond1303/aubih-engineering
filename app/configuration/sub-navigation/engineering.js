@@ -1,5 +1,8 @@
 export default [
   {
+    title: 'Home',
+    link: 'engineering.index',
+  }, {
     title: 'Undergraduate',
     link: 'engineering.degree.undergraduate',
     subMenu: [

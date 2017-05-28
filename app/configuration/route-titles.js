@@ -29,7 +29,7 @@ export default {
             title: 'Curriculum',
           },
           courses: {
-            title: 'Course Deccription',
+            title: 'Course Descriptions',
           },
           tuition: {
             title: 'Tuition & Fees',
@@ -47,7 +47,7 @@ export default {
             title: 'Curriculum',
           },
           courses: {
-            title: 'Course Deccription',
+            title: 'Course Descriptions',
           },
           tuition: {
             title: 'Tuition & Fees',
@@ -62,7 +62,7 @@ export default {
             title: 'Curriculum',
           },
           courses: {
-            title: 'Course Deccription',
+            title: 'Course Descriptions',
           },
           tuition: {
             title: 'Tuition & Fees',
@@ -80,7 +80,7 @@ export default {
             title: 'Curriculum',
           },
           courses: {
-            title: 'Course Deccription',
+            title: 'Course Descriptions',
           },
           tuition: {
             title: 'Tuition & Fees',

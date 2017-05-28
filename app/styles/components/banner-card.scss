@@ -1,0 +1,12 @@
+.banner-card {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: $in-text-banner-height - 40px - 30px;
+  background-color: $background-color;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 0 30px;
+  box-shadow: 0 2px 5px darken($light-grey, 15%);
+  text-align: center;
+}
