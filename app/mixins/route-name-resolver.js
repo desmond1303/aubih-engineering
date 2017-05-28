@@ -31,6 +31,7 @@ function _arrayToObjectRecursive(current, array, result) {
   let currentName = current.split('.');
   result = {
     title: _resolveRouteTitle(current),
+    path: current,
   };
 
   if (currentIndex < array.length - 1) {

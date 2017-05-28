@@ -32,6 +32,10 @@ main {
       text-transform: none;
       font-size: 35px;
 
+      a {
+        @include default-link($light-font-color);
+      }
+
       span {
         display: block;
         padding: 10px 0 0;

@@ -9,7 +9,10 @@ export default Ember.Route.extend({
     this.controllerFor('application').set('_router', this.get('router.router.recognizer.names'));
 
     let route = this.get('routeName');
-    this.controllerFor(route).set('routeTitle', this._resolveRouteTitle(route));
+    this.controllerFor(route).set('route', {
+      title: this._resolveRouteTitle(route),
+      path: route,
+    });
     this.controllerFor('base').set('routePath', route.split('.'));
     this.set('_topParenTitle', route.split('.')[0]);
   },
