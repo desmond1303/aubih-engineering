@@ -7,11 +7,11 @@
   box-sizing: border-box;
   padding: 20px;
   margin: 0 0 30px;
-  box-shadow: 0 1px 3px darken($light-grey, 15%);
+  box-shadow: 0 2px 4px transparentize(black, .9);
   text-align: center;
   transition: box-shadow .2s ease-in-out;
 
   &:hover {
-    box-shadow: 0 5px 20px darken($light-grey, 20%);
+    box-shadow: 0 5px 20px transparentize(black, .8);
   }
 }
