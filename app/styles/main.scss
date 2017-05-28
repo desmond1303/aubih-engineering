@@ -33,8 +33,10 @@ main {
       font-size: 35px;
 
       span {
-        padding: 0 20px;
-        color: inherit;
+        display: block;
+        padding: 10px 0 0;
+        color: $light-font-color;
+        font-size: 85%;
       }
     }
 

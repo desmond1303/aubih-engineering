@@ -12,7 +12,7 @@ export default {
     },
   },
   engineering: {
-    title: 'Engineering College',
+    title: 'College of Engineering',
     index: {
       title: 'About',
     },

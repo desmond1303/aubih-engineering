@@ -5,15 +5,12 @@ export default Ember.Route.extend({
 
   _topParenTitle: null,
 
-  beforeModel: function () {
-    window.scrollTo(0, 0);
-  },
-
   afterModel: function () {
     this.controllerFor('application').set('_router', this.get('router.router.recognizer.names'));
 
     let route = this.get('routeName');
     this.controllerFor(route).set('routeTitle', this._resolveRouteTitle(route));
+    this.controllerFor('base').set('routePath', route.split('.'));
     this.set('_topParenTitle', route.split('.')[0]);
   },
 
@@ -22,6 +19,7 @@ export default Ember.Route.extend({
     this.render('components/route-title', {
       outlet: 'routeTitle',
       into: this.get('_topParenTitle'),
+      controller: 'base',
     });
   },
 
@@ -33,6 +31,21 @@ export default Ember.Route.extend({
     });
 
     return routeTitle.title;
+  },
+
+  actions: {
+
+    willTransition(transition) {
+      window.scrollTo(0, 0);
+
+      let route = transition.targetName;
+      if (route.endsWith('.index')) {
+        route = route.substring(0, route.length - 6);
+      }
+
+      this.controllerFor('base').set('routePath', route.split('.'));
+    },
+
   },
 
 });
