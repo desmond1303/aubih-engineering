@@ -9,10 +9,11 @@ const {
 
 export default Ember.Component.extend({
   classNames: ['in-text-banner-view'],
+  attributeBindings: ['background:style'],
 
   image: null,
 
-  backgroundImage: computed('image', function () {
+  background: computed('image', function () {
     let image = this.get('image');
     if (image) {
       return htmlSafe('background-image: url(' + this.get('image') + ')');

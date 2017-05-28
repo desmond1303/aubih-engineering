@@ -1,31 +1,23 @@
-$in-text-banner-height: 350px;
-
 .in-text-banner-view {
-  height: $in-text-banner-height;
-  margin: 50px 0;
+  display: block;
+  position: relative;
+  margin: 50px 0 50px calc(-50vw + 50%);
+  width: 100vw;
+  background-color: $light-grey;
+  padding: 30px 0 0;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
 
-  .in-text-banner {
+  &:after {
     display: block;
     position: absolute;
+    z-index: -1;
+    content: '';
+    top: 0;
     left: 0;
-    width: 100vw;
-    height: $in-text-banner-height;
-    background-color: $light-grey;
-    padding: 30px 0;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-
-    &:after {
-      display: block;
-      position: absolute;
-      z-index: -1;
-      content: '';
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: transparentize($aubih-blue, 0.1);
-    }
+    bottom: 0;
+    right: 0;
+    background-color: transparentize($aubih-blue, 0.1);
   }
 }
