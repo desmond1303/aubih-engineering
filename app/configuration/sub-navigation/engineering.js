@@ -88,7 +88,7 @@ export default [
             link: 'engineering.degree.doctoral.computer.courses',
           }, {
             title: 'Tuition & Fees',
-            link: 'engineering.degree.doctoral.computer.courses',
+            link: 'engineering.degree.doctoral.computer.tuition',
           },
         ],
       },
