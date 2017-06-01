@@ -30,7 +30,7 @@
           {{#each latestNews as |newsItem|}}
             <li class="news-item">
               {{#link-to newsItem.link}}
-                <div class="image">{{fa-icon 'photo'}}</div>
+                <img src={{newsItem.img}} class="image">
                 {{newsItem.title}}
                 <br>
                 <span>{{fa-icon 'calendar'}}{{newsItem.timestamp}}</span>

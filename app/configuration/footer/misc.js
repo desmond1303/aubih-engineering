@@ -27,12 +27,12 @@ export default {
     }, {
       title: 'Agreement on cooperation',
       timestamp: '12th April, 2017',
-      img: 'agreement.jpg',
+      img: '/assets/images/agreement.jpg',
       link: 'index',
     }, {
       title: 'Our reform of Education',
       timestamp: '7th April, 2017',
-      img: 'reform.jpg',
+      img: '/assets/images/reform.jpg',
       link: 'index',
     },
   ],
