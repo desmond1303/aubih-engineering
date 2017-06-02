@@ -5,7 +5,7 @@
         <img class="header-logo" src="/assets/images/logo.png" alt="">
       </div>
       <div class="col-xs-9">
-        <h3>{{routeTitle}}<span>|</span>{{outlet 'routeTitle'}}</h3>
+        <h3>{{#link-to route.path}}{{route.title}}{{/link-to}}{{outlet 'routeTitle'}}</h3>
       </div>
     </div>
   </div>

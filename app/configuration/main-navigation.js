@@ -1037,7 +1037,7 @@ export default [
     link: 'index',
   }, {
     title: 'Alumni',
-    link: 'index',
+    link: 'alumni.index',
     subMenu: [
       {
         title: 'Alumni',

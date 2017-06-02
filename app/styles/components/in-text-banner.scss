@@ -16,8 +16,14 @@
   }
 
   &.no-filter {
+    padding: 0;
+
+    h1 {
+      font-size: 48px;
+    }
+
     &:after {
-      background-color: transparentize($aubih-blue, 0.7);
+      background-color: transparentize($aubih-blue, 0.9);
     }
   }
 
