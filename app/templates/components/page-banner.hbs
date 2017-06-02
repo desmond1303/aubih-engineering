@@ -1,0 +1,10 @@
+{{#parallax-content speed=parallaxSpeed height=height}}
+  {{#if image}}
+    <img class="parallax-image" src="{{image}}" />
+  {{/if}}
+{{/parallax-content}}
+<div class="container">
+  <div class="row">
+    {{yield}}
+  </div>
+</div>

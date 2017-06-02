@@ -1,5 +1,13 @@
 {{page-header router=_router}}
 <main>
+  {{#page-banner classNames="page-header-banner-view" height=300 filter='no-filter'}}
+    <div class="col-xs-3">
+      <img class="header-logo" src="/assets/images/logo.png" alt="">
+    </div>
+    <div class="col-xs-9">
+      {{bread-crumbs}}
+    </div>
+  {{/page-banner}}
   {{outlet}}
 </main>
 {{page-footer}}

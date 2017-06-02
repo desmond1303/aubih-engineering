@@ -6,6 +6,7 @@ const {
 } = Ember;
 
 export default Base.extend({
+  breadCrumb: 'List',
 
   alumni: computed(function () {
     return AlumniList.sort(this.compareNames);

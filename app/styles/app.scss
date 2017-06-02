@@ -69,10 +69,11 @@ body {
   margin-top: auto;
 }
 
+@import 'application';
 @import 'components/page-header';
 @import 'main';
 @import 'components/sub-navigation';
-@import 'components/in-text-banner';
+@import 'components/page-banner';
 @import "components/banner-card";
 @import 'alumni/list';
 @import 'components/page-footer';

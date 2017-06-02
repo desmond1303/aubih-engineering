@@ -1,0 +1,13 @@
+<h3>
+  {{#each breadCrumbs as |breadCrumb|}}
+    <span>
+      {{#if (and breadCrumb.linkable (not breadCrumb.isCurrent))}}
+        {{#link-to breadCrumb.path}}
+          {{breadCrumb.label}}
+        {{/link-to}}
+      {{else}}
+        {{breadCrumb.label}}
+      {{/if}}
+    </span>
+  {{/each}}
+</h3>

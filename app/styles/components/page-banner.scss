@@ -1,0 +1,113 @@
+@mixin filter {
+  h1,
+  h3 {
+    font-size: 38px;
+    text-shadow: 1px 1px 2px $dark-font-color;
+
+    > .fa {
+      color: inherit;
+      font-size: 20px;
+      position: relative;
+      top: -10px;
+    }
+
+    span {
+      color: inherit;
+      font-size: 24px;
+      font-style: italic;
+    }
+  }
+}
+
+@mixin filter-with-light-text {
+  @include filter;
+
+  h1,
+  h3 {
+    color: $light-font-color;
+  }
+}
+
+@mixin filter-with-dark-text {
+  @include filter;
+
+  h1,
+  h3 {
+    color: $dark-font-color;
+  }
+}
+
+.page-banner-view {
+  &:not(.page-header-banner-view) {
+    display: block;
+    position: relative;
+    margin: 0 0 50px calc(-50vw + 50%);
+    width: 100vw;
+    background-color: $light-grey;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    overflow: hidden;
+
+    p + & {
+      margin-top: 50px !important;
+    }
+
+    .parallax-content {
+      z-index: -2;
+    }
+
+    .parallax-image {
+      width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      padding: 120px 0px;
+      margin: 0px;
+    }
+
+    &.no-filter {
+      @include filter-with-dark-text;
+
+      &:after {
+        background-color: $transparent-color;
+      }
+    }
+
+    &.light-filter {
+      @include filter-with-light-text;
+
+      &:after {
+        background-color: transparentize($aubih-blue, 0.9);
+      }
+    }
+
+    &.full-filter {
+      @include filter-with-light-text;
+
+      &:after {
+        background-color: transparentize($aubih-blue, 0.1);
+      }
+    }
+
+    &.opaque-filter {
+      @include filter-with-light-text;
+
+      &:after {
+        background-color: transparentize($aubih-blue, 0);
+      }
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

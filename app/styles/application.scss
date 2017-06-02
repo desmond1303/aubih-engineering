@@ -1,0 +1,37 @@
+.page-header-banner-view {
+  background-color: $aubih-blue;
+  text-align: right;
+
+  .header-logo {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 30px 5px 0 0;
+  }
+
+  h3 {
+    display: block;
+    position: relative;
+    padding: 50px 0;
+    margin: 0;
+    font-size: 32px;
+    color: $light-font-color;
+    text-align: left;
+
+    span {
+      display: block;
+      margin: 0;
+      padding: 5px 0;
+      color: inherit;
+      cursor: default;
+
+      ~span {
+        font-size: 75%;
+      }
+
+      > a {
+        @include default-link($light-font-color);
+      }
+    }
+  }
+}
