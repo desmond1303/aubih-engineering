@@ -1,3 +1,4 @@
+import Ember from 'ember';
 import Base from 'engineering/controllers/base';
 import AlumniList from 'engineering/configuration/alumni/list';
 
