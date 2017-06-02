@@ -9,7 +9,10 @@ const {
 
 export default Ember.Component.extend({
   classNames: ['in-text-banner-view'],
+  classNameBindings: ['noFilter:no-filter'],
   attributeBindings: ['background:style'],
+
+  noFilter: false,
 
   image: null,
 

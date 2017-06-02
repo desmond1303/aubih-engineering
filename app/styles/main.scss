@@ -114,6 +114,10 @@ main {
 
   p {
     text-align: justify;
+
+    +.in-text-banner-view {
+      margin-top: 110px;
+    }
   }
 
   table {
