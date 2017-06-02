@@ -1,11 +1,11 @@
-import Ember from 'ember';
-import AlumniList from './../../configuration/alumni/list';
+import Base from 'engineering/controllers/base';
+import AlumniList from 'engineering/configuration/alumni/list';
 
 const {
   computed,
 } = Ember;
 
-export default Ember.Controller.extend({
+export default Base.extend({
 
   alumni: computed(function () {
     return AlumniList.sort(this.compareNames);

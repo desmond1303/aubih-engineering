@@ -1,4 +1,4 @@
-<li class={{topLevelClass}}>
+<li class="{{topLevelClass}} {{if item.subMenu 'has-children'}}">
   {{#link-to item.link}}{{item.title}}{{#if item.subMenu}}{{fa-icon 'angle-right'}}{{/if}}{{/link-to}}
   {{#if item.subMenu}}
     <ul>

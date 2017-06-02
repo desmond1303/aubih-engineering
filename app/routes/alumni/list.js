@@ -1,4 +1,4 @@
-import Base from './../base';
+import Base from 'engineering/routes/base';
 
 export default Base.extend({
 });

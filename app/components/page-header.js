@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import $ from 'jquery';
-import MainNavigation from './../configuration/main-navigation';
-import MiscellaneousData from './../configuration/header/misc';
+import MainNavigation from 'engineering/configuration/main-navigation';
+import MiscellaneousData from 'engineering/configuration/header/misc';
 
 const {
   computed,

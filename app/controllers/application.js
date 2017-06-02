@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import Base from 'engineering/controllers/base';
 
-export default Ember.Controller.extend({
+export default Base.extend({
 });
