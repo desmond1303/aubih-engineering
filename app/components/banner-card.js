@@ -6,11 +6,11 @@ const {
 
 export default Ember.Component.extend({
 
-  span: 1,
+  cols: 4,
 
-  colClass: computed('span', function () {
-    let span = (this.get('span') || 1) % 3;
-    return 'col-xs-12 col-sm-' + (4 * span);
+  colClass: computed('cols', function () {
+    let cols = (this.get('cols') || 4) % 12;
+    return 'col-xs-12 col-sm-' + (cols);
   }),
 
 });

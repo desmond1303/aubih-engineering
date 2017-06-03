@@ -22,8 +22,13 @@
     padding: 15px 15px;
     text-align: left;
 
+    > .fa {
+      color: inherit;
+    }
+
     &.active {
-      box-shadow: inset 0 -1px 0 $accent-color;
+      background-color: transparentize($accent-color, 0);
+      color: $light-font-color;
     }
   }
 

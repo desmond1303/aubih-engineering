@@ -49,6 +49,10 @@
     z-index: 0;
     overflow: hidden;
 
+    .big-banner-icon {
+      font-size: 48px !important;
+    }
+
     p + & {
       margin-top: 50px !important;
     }

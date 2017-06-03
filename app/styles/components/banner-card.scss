@@ -22,12 +22,17 @@ $card-height: 250px;
 
   .fa {
     display: block;
-    font-size: 120px;
-    padding: 40px 0 10px;
+    margin: 0;
+    font-size: 80px;
+    padding: 60px 0 40px;
   }
 
   &:hover {
-    background-color: $background-color;
+    background-color: $accent-color;
     box-shadow: 0 5px 20px transparentize(black, .8);
+
+    a {
+      color: $light-font-color;
+    }
   }
 }
