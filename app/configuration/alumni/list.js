@@ -14,6 +14,7 @@ export default [
     company: 'Google',
     profession: 'Online Media Associate',
     photo: '/assets/images/alumni/agovic-damir.jpg',
+    quote: 'Lorem Ipsum Dolor sit Amet Forever Lorem Ipsum Dolor sit Amet Forever Lorem Ipsum Dolor sit Amet Forever',
   }, {
     name: 'Mlivo Harun',
     company: 'Google',

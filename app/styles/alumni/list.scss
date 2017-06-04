@@ -24,6 +24,32 @@
       border-radius: 100%;
       background-position: center;
       background-size: cover;
+
+      .alumnus-quote {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        position: absolute;
+        padding: 20px;
+        margin: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        clip-path: circle(0 at center);
+        background-color: transparentize($accent-color, .1);
+        color: $light-font-color;
+        overflow: hidden;
+        border-radius: 100px;
+        transition: all .25s ease-in-out;
+      }
+
+      &:hover {
+        .alumnus-quote {
+          clip-path: circle(50% at center);
+        }
+      }
     }
   }
 }

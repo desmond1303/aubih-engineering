@@ -3,6 +3,9 @@
     <div class="col-xs-6 col-sm-3 equal-height">
       <div class="alumnus">
         <div class="photo" style={{background-image alumnus.photo}}>
+          {{#if alumnus.quote}}
+            <p class="alumnus-quote">{{fa-icon 'quote-left'}}{{alumnus.quote}}{{fa-icon 'quote-right'}}</p>
+          {{/if}}
         </div>
         <h3>{{alumnus.name}}</h3>
         <p>{{alumnus.company}}</p>
