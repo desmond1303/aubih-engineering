@@ -1,31 +1,17 @@
 import Ember from 'ember';
 import Base from 'engineering/controllers/base';
+import Sortable from 'engineering/mixins/sortable';
 import AlumniList from 'engineering/configuration/alumni/list';
 
 const {
   computed,
 } = Ember;
 
-export default Base.extend({
+export default Base.extend(Sortable, {
   breadCrumb: 'List',
 
   alumni: computed(function () {
-    return AlumniList.sort(this.compareNames);
+    return AlumniList.sort((a, b) => this.compare(a.name, b.name));
   }),
-
-  compareNames: function (a, b) {
-    let nameOne = a.name.toLowerCase();
-    let nameTwo = b.name.toLowerCase();
-
-    if (nameOne < nameTwo) {
-      return -1;
-    }
-
-    if (nameOne > nameTwo) {
-      return 1;
-    }
-
-    return 0;
-  },
 
 });

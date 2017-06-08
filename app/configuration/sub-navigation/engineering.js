@@ -14,6 +14,9 @@ export default [
             title: 'Overview',
             link: 'engineering.degree.undergraduate.software.overview',
           }, {
+            title: 'Dean\'s Message',
+            link: 'engineering.degree.undergraduate.software.dean',
+          }, {
             title: 'Curriculum',
             link: 'engineering.degree.undergraduate.software.curriculum',
           }, {
@@ -22,6 +25,12 @@ export default [
           }, {
             title: 'Tuition & Fees',
             link: 'engineering.degree.undergraduate.software.tuition',
+          }, {
+            title: 'Faculty & Staff',
+            link: 'engineering.degree.undergraduate.software.staff',
+          },  {
+            title: 'Alumni',
+            link: 'engineering.degree.undergraduate.software.alumni',
           },
         ],
       },
@@ -38,6 +47,9 @@ export default [
             title: 'Overview',
             link: 'engineering.degree.masters.software.overview',
           }, {
+            title: 'Dean\'s Message',
+            link: 'engineering.degree.masters.software.dean',
+          }, {
             title: 'Curriculum',
             link: 'engineering.degree.masters.software.curriculum',
           }, {
@@ -46,6 +58,12 @@ export default [
           }, {
             title: 'Tuition & Fees',
             link: 'engineering.degree.masters.software.tuition',
+          }, {
+            title: 'Faculty & Staff',
+            link: 'engineering.degree.masters.software.staff',
+          },  {
+            title: 'Alumni',
+            link: 'engineering.degree.masters.software.alumni',
           },
         ],
       },
@@ -57,6 +75,9 @@ export default [
             title: 'Overview',
             link: 'engineering.degree.masters.system.overview',
           }, {
+            title: 'Dean\'s Message',
+            link: 'engineering.degree.masters.system.dean',
+          }, {
             title: 'Curriculum',
             link: 'engineering.degree.masters.system.curriculum',
           }, {
@@ -65,6 +86,12 @@ export default [
           }, {
             title: 'Tuition & Fees',
             link: 'engineering.degree.masters.system.tuition',
+          }, {
+            title: 'Faculty & Staff',
+            link: 'engineering.degree.masters.system.staff',
+          },  {
+            title: 'Alumni',
+            link: 'engineering.degree.masters.system.alumni',
           },
         ],
       },
@@ -81,6 +108,9 @@ export default [
             title: 'Overview',
             link: 'engineering.degree.doctoral.computer.overview',
           }, {
+            title: 'Dean\'s Message',
+            link: 'engineering.degree.doctoral.computer.dean',
+          }, {
             title: 'Curriculum',
             link: 'engineering.degree.doctoral.computer.curriculum',
           }, {
@@ -89,6 +119,12 @@ export default [
           }, {
             title: 'Tuition & Fees',
             link: 'engineering.degree.doctoral.computer.tuition',
+          }, {
+            title: 'Faculty & Staff',
+            link: 'engineering.degree.doctoral.computer.staff',
+          },  {
+            title: 'Alumni',
+            link: 'engineering.degree.doctoral.computer.alumni',
           },
         ],
       },

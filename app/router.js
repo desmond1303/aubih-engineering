@@ -21,6 +21,9 @@ Router.map(function () {
           this.route('curriculum');
           this.route('courses');
           this.route('tuition');
+          this.route('staff');
+          this.route('dean');
+          this.route('alumni');
         });
       });
 
@@ -30,6 +33,9 @@ Router.map(function () {
           this.route('curriculum');
           this.route('courses');
           this.route('tuition');
+          this.route('staff');
+          this.route('dean');
+          this.route('alumni');
         });
 
         this.route('system', function () {
@@ -37,6 +43,9 @@ Router.map(function () {
           this.route('curriculum');
           this.route('courses');
           this.route('tuition');
+          this.route('staff');
+          this.route('dean');
+          this.route('alumni');
         });
       });
 
@@ -46,6 +55,9 @@ Router.map(function () {
           this.route('curriculum');
           this.route('courses');
           this.route('tuition');
+          this.route('staff');
+          this.route('dean');
+          this.route('alumni');
         });
       });
     });
