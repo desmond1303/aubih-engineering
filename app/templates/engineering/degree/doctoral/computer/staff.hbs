@@ -1,13 +1,8 @@
-<div class="row alumni">
+<div class="row staff">
   {{#each staff as |staffMember|}}
     <div class="col-xs-6 col-sm-3 equal-height">
       <div class="staffMember">
         <div class="photo" style={{background-image staffMember.photo}}>
-          {{#if staffMember.quote}}
-            {{fa-icon 'quote-right' class='has-quote-icon overlay'}}
-            {{fa-icon 'quote-right' class='has-quote-icon'}}
-            <p class="staffMember-quote">{{fa-icon 'quote-left'}}{{staffMember.quote}}{{fa-icon 'quote-right'}}</p>
-          {{/if}}
         </div>
         <h3>{{staffMember.name}}</h3>
         <p>{{staffMember.title}}</p>

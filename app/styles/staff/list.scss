@@ -1,0 +1,50 @@
+.staff {
+  margin-top: 50px;
+
+  .equal-height {
+    height: 500px;
+  }
+
+  .staffMember {
+    text-align: center;
+    margin: 0 0 40px;
+
+      p {
+        text-align: inherit;
+      }
+
+    .photo {
+      display: block;
+      position: relative;
+      margin-left: 10%;
+      width: 80%;
+      height: 0px;
+      padding: 0 0 80%;
+      border-radius: 100%;
+      background-position: center;
+      background-size: cover;
+
+      .has-quote-icon {
+        color: $accent-color;
+        position: absolute;
+        z-index: 0;
+        top: 6px;
+        right: 6px;
+        font-size: 30px;
+        transition: opacity .25s ease-in-out;
+        -webkit-text-stroke: 10px $light-font-color;
+
+        &.overlay {
+          z-index: 1;
+          -webkit-text-stroke: 0;
+        }
+      }
+
+      &:hover {
+        .has-quote-icon {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
