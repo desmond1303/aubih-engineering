@@ -1,5 +1,5 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  breadCrumb: 'Dean\'s Message',
+  breadCrumb: 'President\'s Message',
 });

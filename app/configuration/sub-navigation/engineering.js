@@ -14,7 +14,7 @@ export default [
             title: 'Overview',
             link: 'engineering.degree.undergraduate.software.overview',
           }, {
-            title: 'Dean\'s Message',
+            title: 'President\'s Message',
             link: 'engineering.degree.undergraduate.software.dean',
           }, {
             title: 'Curriculum',
@@ -47,7 +47,7 @@ export default [
             title: 'Overview',
             link: 'engineering.degree.masters.software.overview',
           }, {
-            title: 'Dean\'s Message',
+            title: 'President\'s Message',
             link: 'engineering.degree.masters.software.dean',
           }, {
             title: 'Curriculum',
@@ -75,7 +75,7 @@ export default [
             title: 'Overview',
             link: 'engineering.degree.masters.system.overview',
           }, {
-            title: 'Dean\'s Message',
+            title: 'President\'s Message',
             link: 'engineering.degree.masters.system.dean',
           }, {
             title: 'Curriculum',
@@ -108,7 +108,7 @@ export default [
             title: 'Overview',
             link: 'engineering.degree.doctoral.computer.overview',
           }, {
-            title: 'Dean\'s Message',
+            title: 'President\'s Message',
             link: 'engineering.degree.doctoral.computer.dean',
           }, {
             title: 'Curriculum',
