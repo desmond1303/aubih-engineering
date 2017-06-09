@@ -22,7 +22,7 @@ export default [
     title: 'Doctor of Philosophy in Electrical Engineering',
     institution: 'Faculty of Electrical Engineering and Computing, University in Zagreb, Croatia',
     speciality: 'Computer and Information Technology',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Bezdrob Muamer',
     title: 'Doctor of Economic Sciences in Management',
@@ -34,7 +34,7 @@ export default [
     title: 'Diploma in Computer Scieneces and Electrical Engineering',
     institution: 'Sarajevo School of Science and Technology, Bosnia and Herzegovina',
     speciality: 'Computer and Information Technology',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Crneta Mersida',
     title: 'Master of English Language and Literature',
@@ -76,7 +76,7 @@ export default [
     title: 'Doctor of Political Sciences',
     institution: 'Faculty of Political Science, University of Sarajevo, Bosnia and Herzegovina',
     speciality: 'Political Science',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Džamalija Adi',
     title: 'Master of Law, State and International Public Law',
@@ -112,7 +112,7 @@ export default [
     title: 'Master of Laws in International Business Law',
     institution: 'Central European University, Hungary',
     speciality: 'General Law',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Hadžimehmedović Amir',
     title: 'Doctor of Laws in International Business Law',
@@ -130,7 +130,7 @@ export default [
     title: 'Doctor of Technical Sciences in Electrical Engineering',
     institution: 'Faculty of Electrical Engineering, University of Tuzla, Bosnia and Herzegovina',
     speciality: 'Computer and Information Technology',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Hodžić Migdat',
     title: 'Doctor of Electrical Engineering an Computer Science',
@@ -154,7 +154,7 @@ export default [
     title: 'Master of Laws in International Business Law',
     institution: 'Central European University, Hungary',
     speciality: 'General Law',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Jukan Admir',
     title: 'Master of Technical Sciences in Electrical Engineering',
@@ -166,13 +166,13 @@ export default [
     title: 'Master of Computer Science',
     institution: 'Faculty of Natural Sciences and Mathematics, University of Sarajevo, Bosnia and Hercegovina',
     speciality: 'Mathematics - Statistics',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Kordić-Grujić Maja',
     title: 'Master of Science in Multimedia with concentration in Hypermedia and Electronic Publishing',
     institution: 'University of Paris, France',
     speciality: 'Graphic and Multimedia Design',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Kulenović Feđa',
     title: 'Diploma in Comparative Literature and Library',
@@ -196,7 +196,7 @@ export default [
     title: 'Diploma in Mathematics',
     institution: 'Faculty of Natural Science and Mathematics Department of Mathematics, University of Tuzla, Bosnia and Herzegovina',
     speciality: 'Mathematics – Statistics',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Mesbah Laurent',
     title: 'Doctor of Philosophy in Biology',
@@ -208,7 +208,7 @@ export default [
     title: 'Diploma in English Language and Literature',
     institution: 'Faculty of Philosophy, University of Tuzla, Bosnia and Herzegovina',
     speciality: 'English Language and Literature',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Murtezić Arben',
     title: 'Master of Science in International Criminal Justice',
@@ -238,7 +238,7 @@ export default [
     title: 'Diploma in English Language and Literature',
     institution: 'Faculty of Philosophy, University of Tuzla, Bosnia and Hercegovina',
     speciality: 'English Language and Literature',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Pešto Haris',
     title: 'Doctor of Economic Sciences',
@@ -250,19 +250,19 @@ export default [
     title: 'Master of Science in Electrical Engineering in Computing and Information Technology',
     institution: 'Faculty of Electrical Engineering, University of Sarajevo, Bosnia and Herzegovina',
     speciality: 'Computer and Information Technology',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Putica Sanda',
     title: 'Master in State Management and Humanitarian Affairs',
     institution: 'University of Rome “La Sapienza” – University of Sarajevo – University of Belgrade',
     speciality: 'Economics and Business',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Rimac-Bjelobrk Maja' ,
     title: 'Master in State Management and Humanitarian Affairs',
     institution: 'University of Rome “La Sapienza” – University of Sarajevo – University of Belgrade',
     speciality: 'General Law',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Rizvo Samir',
     title: 'Doctor of Legal Sciences in International Law',
@@ -286,7 +286,7 @@ export default [
     title: 'Master in European Studies',
     institution: 'Center for Interdisciplinary Postgraduate Studies, University of Sarajevo, Bosnia and Herzegovina',
     speciality: 'Economics and Business',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Smajević Amir',
     title: 'Master of Science in Electrical Engineering Science in Computer and Information Technology',
@@ -298,7 +298,7 @@ export default [
     title: 'Master of Laws in European Union Law',
     institution: 'Faculty of Law, University of Sarajevo, Bosnia and Herzegovina',
     speciality: 'General Law',
-    photo: '/assets/images/staff/placeholder.png',
+    photo: '/assets/images/staff/placeholder-f.png',
   }, {
     name: 'Tanović Anel',
     title: 'Doctor of Technical Sciences in Information Systems',
